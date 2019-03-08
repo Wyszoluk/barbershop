@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+
+/* Mobile First Media Queries */
+
+/* Header */
+
+
+clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    overflow: hidden;
+
+}
+
+header .bcgimg {
+    background-image: url(images/images_ready/bgc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -90px 0;
+    background-attachment: fixed;
+}
+
+header .bcg {
+    background-color: rgba(0, 0, 0, 50%);
+    position: relative;
+    height: 100vh;
+}
+
+header h1 {
+    position: absolute;
+    top: 14vh;
+    padding-left: 21vw;
+    padding-right: 15vw;
+    font-family: 'Bree Serif', serif;
+    font-size: 5rem;
+    line-height: 7.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+
+header p {
+    position: absolute;
+    top: 63vh;
+    padding-left: 21vw;
+    padding-right: 17vw;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-style: italic;
+    color: white;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    z-index: 1;
+}
+
+.navigation {
+    display: none;
+    background-color: transprent;
+    position: absolute;
+}
+
+/* Header Portrait Orientation */
+
+/* Galaxy Note II/SIII */
+@media (min-width: 360px) and (orientation: portrait) {
+
+    header h1 {
+        top: 16vh;
+        font-size: 5.5rem;
+        line-height: 7.5rem;
+    }
+
+    header p {
+        top: 63vh;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+
+
+/* iPhone X */
+@media (min-width: 374px) and (min-height: 810px) {
+
+    header h1 {
+        font-size: 6rem;
+        line-height: 8.8rem;
+    }
+
+    header p {
+        top: 57vh;
+        font-size: 2.3rem;
+        line-height: 3rem;
+    }
+}
+
+
+/* iPhone 6/7/8 */
+@media (min-width: 374px) and (orientation: portrait) {
+
+    header h1 {
+        font-size: 6rem;
+        line-height: 8.8rem;
+    }
+
+    header p {
+        top: 63vh;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+
+
+
+/* Pixel 2 */
+@media (min-width: 410px) and (orientation: portrait) {
+
+    header h1 {
+        font-size: 6rem;
+        line-height: 8.6rem;
+    }
+
+    header p {
+        top: 60vh;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+    }
+
+
+    header img {
+        width: 65px;
+        height: 65px;
+        top: 12px;
+        right: 7px;
+    }
+
+}
+
+
+/* Pixel 2 XL */
+@media (min-width: 410px) and (min-height: 820px) {
+
+    header h1 {
+        font-size: 6.2rem;
+        line-height: 8.8rem;
+    }
+
+    header p {
+        top: 57vh;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    header h1 {
+        font-size: 8rem;
+        line-height: 8.3rem;
+    }
+
+    header p {
+        font-size: 2.9rem;
+        line-height: 3.6rem;
+    }
+
+
+    header img {
+        width: 65px;
+        height: 65px;
+        top: 12px;
+        right: 7px;
+    }
+
+}
+
+/* iPad */
+@media (min-width: 765px) and (orientation: portrait) {
+
+    header h1 {
+        top: 13vh;
+        padding-left: 24vw;
+        padding-right: 15vw;
+        font-size: 11rem;
+        line-height: 15rem;
+    }
+
+    header p {
+        padding-left: 24vw;
+        padding-right: 15vw;
+        top: 63vh;
+        font-size: 3.3rem;
+        line-height: 4rem;
+    }
+
+
+    header img {
+        width: 90px;
+        height: 90px;
+        top: 17px;
+        right: 10px;
+    }
+
+}
+
+
+/* Nexus 10 */
+@media (min-width: 799px) and (min-height: 1200px) {
+
+    header h1 {
+        top: 16vh;
+        font-size: 11rem;
+        line-height: 15rem;
+    }
+
+    header p {
+        top: 66vh;
+        font-size: 3.8rem;
+        line-height: 4.7rem;
+    }
+}
+
+
+/* iPad Pro */
+@media (min-width: 1024px) and (orientation: portrait) {
+
+    header h1 {
+        top: 15vh;
+        padding-left: 24vw;
+        padding-right: 15vw;
+        font-size: 14rem;
+        line-height: 17rem;
+    }
+
+    header p {
+        padding-left: 24vw;
+        padding-right: 15vw;
+        top: 60vh;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+        top: 19px;
+        right: 12px;
+    }
+
+}
+
+
+/* Header Landscape Orientation */
+
+
+/* iPhone 5/SE, iPhone 6/7/8, Galaxy Note II/SIII */
+@media (min-width: 550px) and (orientation: landscape) {
+
+    header .bcgimg {
+        background-position: center;
+    }
+
+    header h1 {
+        top: 14vh;
+        padding-left: 19vw;
+        padding-right: 27vw;
+        font-size: 5rem;
+        line-height: 6.5rem;
+    }
+
+    header p {
+        position: absolute;
+        top: 63vh;
+        padding-left: 19vw;
+        padding-right: 17vw;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+        top: 10px;
+        right: 5px;
+    }
+
+}
+
+/* iPhone X */
+@media (min-width: 811px) and (orientation: landscape) and (min-width: 374px) {
+
+
+    header h1 {
+        top: 16vh;
+        padding-left: 19vw;
+        padding-right: 35vw;
+        font-size: 5.5rem;
+        line-height: 6.9rem;
+    }
+
+    header p {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+    }
+}
+
+/* Pixel 2, Pixel 2 XL */
+@media (min-width: 731px) and (orientation: landscape) {
+
+
+    header h1 {
+        top: 16vh;
+        padding-left: 19vw;
+        padding-right: 32vw;
+        font-size: 5rem;
+        line-height: 6.5rem;
+    }
+
+    header p {
+        position: absolute;
+        top: 61vh;
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+}
+
+
+/* iPad */
+@media (min-width: 1024px) and (orientation: landscape) {
+
+    header h1 {
+        top: 14vh;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        font-size: 9rem;
+        line-height: 11rem;
+    }
+
+    header p {
+        top: 57vh;
+        padding-left: 20vw;
+        padding-right: 17vw;
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+
+    header img {
+        width: 90px;
+        height: 90px;
+        top: 13px;
+        right: 8px;
+    }
+
+}
+
+
+/* iPad Pro, desktop */
+@media (min-width: 1365px) and (orientation: landscape) {
+
+    .navigation {
+        display: block;
+        left: 38vw;
+    }
+
+    .navigation ul {
+        list-style: none;
+    }
+
+    .navigation ul li {
+        float: left;
+    }
+
+    .navigation ul li a {
+        font-size: 4rem;
+        color: white;
+        padding: 0 2vw;
+        text-decoration: none;
+        line-height: 6vw;
+        text-transform: uppercase;
+    }
+
+    header h1 {
+        top: 20vh;
+        padding-left: 40vw;
+        padding-right: 5vw;
+        font-size: 11rem;
+        line-height: 13rem;
+    }
+
+    header p {
+        top: 58vh;
+        padding-left: 40vw;
+        padding-right: 5vw;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+
+    header img {
+        width: 120px;
+        height: 120px;
+        top: 13px;
+        left: 8px;
+    }
+}
+
+/* iPad Pro, desktop */
+@media (min-width: 1365px) and (orientation: landscape) {
+
+    .navigation {
+        display: block;
+        left: 38vw;
+    }
+
+    .navigation ul {
+        list-style: none;
+    }
+
+    .navigation ul li {
+        float: left;
+    }
+
+    .navigation ul li a {
+        font-size: 4rem;
+        color: white;
+        padding: 0 2vw;
+        text-decoration: none;
+        line-height: 6vw;
+        text-transform: uppercase;
+    }
+
+    header h1 {
+        top: 20vh;
+        padding-left: 40vw;
+        padding-right: 5vw;
+        font-size: 11rem;
+        line-height: 13rem;
+    }
+
+    header p {
+        top: 58vh;
+        padding-left: 40vw;
+        padding-right: 5vw;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+
+    header img {
+        width: 120px;
+        height: 120px;
+        top: 13px;
+        left: 8px;
+    }
+}
+
+/* Main Information */
+
+.information .info {
+    position: relative;
+    background-color: rgba(25, 172, 108, 0.7);
+    height: 40vh;
+    width: 100vw;
+}
+
+.information .about {
+    height: 80vh;
+}
+
+.information i,
+.information h2,
+.information h3,
+.information .phone,
+.information p {
+    position: absolute;
+}
+
+.information .img {
+    height: 40vh;
+}
+
+.information i {
+    font-size: 4rem;
+    padding: 40px 0 0 80px;
+    float: left;
+}
+
+.information h2 {
+    font-size: 2rem;
+    padding: 45px 0 0 20px;
+    float: left;
+    text-transform: uppercase;
+    left: 30vw;
+}
+
+.information h3 {
+    font-size: 2.5rem;
+}
+
+.information .location h3:nth-of-type(1) {
+    left: 25vw;
+    top: 18vh;
+}
+
+.information .location h3:nth-of-type(2) {
+    left: 25vw;
+    top: 25vh;
+}
+
+.information p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    top: 20vh;
+    padding-left: 21vw;
+    padding-right: 17vw;
+    line-height: 2.3rem;
+}
+
+.information .phone {
+    left: 24vw;
+    top: 20.5vh;
+}
+
+.information a {
+    text-decoration: none;
+    cursor: default;
+    color: black;
+    pointer-events: none;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* disable activation of hyperlink */
+}
+
+.information .img {
+    height: 40vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.information .window {
+    background-image: url(images/images_ready/IMG_7905.jpg);
+}
+
+.information .cutting {
+    background-image: url(images/images_ready/IMG_7150.jpg);
+}
+
+.information .cosmetics {
+    background-image: url(images/images_ready/fb_tlo_IMG_7162.png);
+    /*     display: none; */
+    /* display only on mobile */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #2c8e64;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
