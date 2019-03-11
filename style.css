@@ -300,6 +300,7 @@ header img {
         height: 60px;
         top: 10px;
         right: 5px;
+        position: absolute;
     }
 
 }
@@ -513,13 +514,19 @@ header img {
     /*     float: left; */
 }
 
-/* .information h2 {
-    font-size: 2rem;
-    padding: 45px 0 0 20px;
-    float: left;
-    text-transform: uppercase;
-    left: 30vw;
-} */
+i.fa-map-marker {
+    padding-top: 8vh;
+}
+
+i.fa-mobile {
+    padding-top: 11vh;
+    padding-left: 26vw;
+}
+
+.information .phone {
+    left: 27vw;
+    top: 20.5vh;
+}
 
 .information h2 {
     font-size: 2rem;
@@ -559,11 +566,6 @@ header img {
     padding-left: 21vw;
     padding-right: 17vw;
     line-height: 2.3rem;
-}
-
-.information .phone {
-    left: 24vw;
-    top: 20.5vh;
 }
 
 .information a {
@@ -610,12 +612,12 @@ header img {
     }
 
     .information .location h3:nth-of-type(1) {
-        left: 25vw;
+        left: 28vw;
         top: 16vh;
     }
 
     .information .location h3:nth-of-type(2) {
-        left: 25vw;
+        left: 28vw;
         top: 22vh;
     }
 
@@ -623,10 +625,6 @@ header img {
         height: 60vh;
     }
 
-    .information .phone {
-        left: 29vw;
-        top: 19vh;
-    }
 
     .information .img {
         height: 35vh;
@@ -641,18 +639,64 @@ header img {
         line-height: 2.3rem;
     }
 
+    .information .phone {
+        left: 30vw;
+        top: 20vh;
+    }
+
+    .information i {
+        padding: 6.5vh 0 0 27vw;
+    }
+
+    i.fa-mobile {
+        padding-top: 11vh;
+        padding-left: 29vw;
+    }
+
+    i.fa-user-tie {
+        padding-left: 32vw;
+    }
+
 }
 
 /* Pixel 2 */
 @media (min-width: 410px) and (orientation: portrait) {
     .information .phone {
-        left: 29vw;
-        top: 21vh;
+        left: 32vw;
+        top: 23vh;
     }
 
     .information .about {
         height: 65vh;
     }
+
+    .information i {
+        padding: 6.5vh 0 0 27vw;
+    }
+
+    i.fa-mobile {
+        padding-top: 12vh;
+        padding-left: 30vw;
+    }
+
+    i.fa-user-tie {
+        padding-left: 32vw;
+    }
+
+    i.fa-map-marker {
+        padding-top: 10vh;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        left: 30vw;
+        top: 20vh;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        left: 30vw;
+        top: 25vh;
+    }
+
 }
 
 /* iPad */
@@ -696,22 +740,12 @@ header img {
         line-height: 3.6rem;
     }
 
-
-
-
     .information i {
         font-size: 7rem;
-        padding: 6.5vh 0 0 24vw;
+        padding: 6.5vh 0 0 27vw;
         /*     float: left; */
     }
 
-    /* .information h2 {
-    font-size: 2rem;
-    padding: 45px 0 0 20px;
-    float: left;
-    text-transform: uppercase;
-    left: 30vw;
-} */
 
     .information h2 {
         font-size: 4rem;
@@ -732,16 +766,6 @@ header img {
         font-size: 4.5rem;
     }
 
-    .information .location h3:nth-of-type(1) {
-        left: 26vw;
-        top: 18vh;
-    }
-
-    .information .location h3:nth-of-type(2) {
-        left: 26vw;
-        top: 25vh;
-    }
-
     .information p {
         font-size: 3rem;
         top: 20vh;
@@ -751,24 +775,44 @@ header img {
     }
 
     .information .phone {
-        left: 28vw;
+        left: 32vw;
         top: 20.5vh;
     }
 
     .information a {
         font-size: 4.5rem;
     }
+
+
+    i.fa-mobile {
+        padding-top: 10vh;
+        padding-left: 30vw;
+    }
+
+    i.fa-user-tie {
+        padding-left: 32vw;
+    }
+
+    i.fa-map-marker {
+        padding-top: 6vh;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        left: 30vw;
+        top: 16vh;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        left: 30vw;
+        top: 23vh;
+    }
+
+
+
 }
 
-
-
-
-
-
-
-
-/* iPad Pro/desktop portrait and landscape */
-@media (min-width: 1024px) {
+/* iPad Pro/ */
+@media (min-width: 1024px) and (orientation: portrait) {
 
     .information .location {
         float: right;
@@ -798,16 +842,211 @@ header img {
     .info.about {
         background-color: #2c8e64;
     }
-
-
 }
 
 
+/* Main Orientation Landscape  */
 
+/* iPhone 5/SE */
 
-footer {
-    background-color: rgba(25, 172, 108, 0.7);
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 10px 0;
+@media (min-width: 567px) and (orientation: landscape) {
+
+    .information .location {
+        float: right;
+        width: 50%;
+        background-color: #2c8e64;
+        height: 50vh;
+    }
+
+    .information .contact {
+        float: left;
+        width: 50%;
+        height: 50vh;
+    }
+
+    .information .img {
+        float: left;
+        width: 50%;
+        height: 50vh;
+    }
+
+    .info.about {
+        background-color: #2c8e64;
+        height: 100vh;
+    }
+
+    .info h2 {
+        display: none;
+    }
+
+    i.fa-map-marker {
+        font-size: 5rem;
+        padding: 17vh 0 0 7vw;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        left: 18vw;
+        top: 12vh;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        left: 18vw;
+        top: 19vh;
+    }
+
+    i.fa-mobile {
+        font-size: 5rem;
+        padding: 17vh 0 0 7vw;
+    }
+
+    .information .phone {
+        left: 18vw;
+        top: 20vh;
+    }
+
+    i.fa-user-tie {
+        font-size: 5rem;
+        padding: 9.5vh 0 0 46vw;
+    }
+
+    .information p {
+        top: 30vh;
+    }
 }
+
+/* iPhone 6/7/8, Galaxy Note II/SIII */
+@media (min-width: 640px) and (orientation: landscape) {
+    .information .location h3:nth-of-type(1) {
+        left: 18vw;
+        top: 16vh;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        left: 18vw;
+        top: 24vh;
+    }
+}
+
+/* iPad */
+@media (min-width: 1024px) and (orientation: landscape) {
+
+    .information .location {
+        height: 45vh;
+    }
+
+    .information .contact {
+        height: 45vh;
+    }
+
+    .information .img {
+        height: 45vh;
+    }
+
+    .info.about {
+        height: 70vh;
+    }
+
+    .info h2 {
+        display: none;
+    }
+
+    i.fa-map-marker {
+        font-size: 8rem;
+        padding: 17vh 0 0 7vw;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        left: 17vw;
+        top: 15vh;
+        font-size: 4rem;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        left: 17vw;
+        top: 22vh;
+        font-size: 4rem;
+    }
+
+    i.fa-mobile {
+        font-size: 8rem;
+        padding: 17vh 0 0 7vw;
+    }
+
+    .information .phone {
+        left: 18vw;
+        top: 19vh;
+    }
+
+    .information .phone a {
+        font-size: 4rem;
+    }
+
+    i.fa-user-tie {
+        font-size: 8rem;
+        padding: 9.5vh 0 0 46vw;
+    }
+
+    .information p {
+        top: 27vh;
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+
+
+    /* iPad Pro i Desktop */
+    @media (min-width: 1024px) and (orientation: landscape) {
+
+        .greenimg {
+            background-image: url(images/Images_ready/IMG_7135__zd.jpg);
+            background-size: cover;
+        }
+
+        .information .about {
+/*             background-color: transparent; */
+                background-color: rgba(0, 0, 0, 40%);
+            height: 90vh;
+        }
+
+        .information p {
+            color: white;
+            top: 34vh;
+            font-size: 3.5rem;
+            line-height: 4.4rem;
+            padding-left: 10vw;
+            padding-right: 50vw;
+        }
+
+        i.fa-user-tie {
+            display: none;
+        }
+
+        .information .about h2 {
+            display: block;
+            color: white;
+            font-size: 8rem;
+            vertical-align: 0%;
+            padding: 15vh 0 0 10vw;
+            margin: 0;
+            font-family: 'Bree Serif', serif;
+            font-weight: 400;
+        }
+    }
+
+    footer {
+        background-color: #2c8e64;
+        /* rgba(25, 172, 108, 0.7); */
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+
+    @media (min-width: 568px) and (orientation: landscape) {
+        footer {
+            background-color: rgba(25, 172, 108, 0.7);
+        }
+
+        @media (min-width: 1024px) {
+            footer {
+                background-color: rgba(25, 172, 108, 0.7);
+            }
+        }
