@@ -431,10 +431,11 @@ header .barberpole img {
         text-decoration: none;
         line-height: 5vw;
         text-transform: uppercase;
+        transition: text-shadow .1s;
     }
 
     .navigation ul li a:hover {
-        text-shadow: 1px 0 0 currentColor;
+        text-shadow: 1px 0 0 currentColor, -1px 0 0 currentColor;
         cursor: pointer;
     }
     
