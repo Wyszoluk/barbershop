@@ -3,7 +3,11 @@
     padding: 0;
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
-    ;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 
@@ -62,7 +66,7 @@ header p {
     color: white;
 }
 
-header img {
+header .barberpole img {
     width: 60px;
     height: 60px;
     display: block;
@@ -77,6 +81,11 @@ header img {
     background-color: transprent;
     position: absolute;
 }
+
+.images {
+    display: none;
+}
+
 
 /* Header Portrait Orientation */
 
@@ -127,8 +136,6 @@ header img {
     }
 }
 
-
-
 /* Pixel 2 */
 @media (min-width: 410px) and (orientation: portrait) {
 
@@ -144,15 +151,13 @@ header img {
     }
 
 
-    header img {
+    header .barberpole img {
         width: 65px;
         height: 65px;
         top: 12px;
         right: 7px;
     }
-
 }
-
 
 /* Pixel 2 XL */
 @media (min-width: 410px) and (min-height: 820px) {
@@ -182,7 +187,7 @@ header img {
     }
 
 
-    header img {
+    header .barberpole img {
         width: 65px;
         height: 65px;
         top: 12px;
@@ -211,15 +216,13 @@ header img {
     }
 
 
-    header img {
+    header .barberpole img {
         width: 90px;
         height: 90px;
         top: 17px;
         right: 10px;
     }
-
 }
-
 
 /* Nexus 10 */
 @media (min-width: 799px) and (min-height: 1200px) {
@@ -236,7 +239,6 @@ header img {
         line-height: 4.7rem;
     }
 }
-
 
 /* iPad Pro */
 @media (min-width: 1024px) and (orientation: portrait) {
@@ -257,18 +259,15 @@ header img {
         line-height: 5rem;
     }
 
-    header img {
+    header .barberpole img {
         width: 120px;
         height: 120px;
         top: 19px;
         right: 12px;
     }
-
 }
 
-
 /* Header Landscape Orientation */
-
 
 /* iPhone 5/SE, iPhone 6/7/8, Galaxy Note II/SIII */
 @media (min-width: 550px) and (orientation: landscape) {
@@ -280,7 +279,7 @@ header img {
     header h1 {
         top: 14vh;
         padding-left: 19vw;
-        padding-right: 27vw;
+        padding-right: 23vw;
         font-size: 5rem;
         line-height: 6.5rem;
     }
@@ -295,7 +294,7 @@ header img {
         line-height: 2.3rem;
     }
 
-    header img {
+    header .barberpole img {
         width: 60px;
         height: 60px;
         top: 10px;
@@ -304,6 +303,15 @@ header img {
     }
 
 }
+
+/* iPhone 6/7/8, Galaxy Note II/SIII */
+@media (min-width: 667px) and (orientation: landscape) {
+
+    header h1 {
+        padding-right: 27vw;
+    }
+}
+
 
 /* iPhone X */
 @media (min-width: 811px) and (orientation: landscape) and (min-width: 374px) {
@@ -343,9 +351,8 @@ header img {
     }
 }
 
-
 /* iPad */
-@media (min-width: 1024px) and (orientation: landscape) {
+/* @media (min-width: 1024px) and (orientation: landscape) {
 
     header h1 {
         top: 14vh;
@@ -369,12 +376,35 @@ header img {
         top: 13px;
         right: 8px;
     }
+} */
 
-}
+
+/* iPad */
+@media (min-width: 1024px) and (orientation: landscape) {
+
+    header h1 {
+        top: 20vh;
+        padding-left: 40vw;
+        padding-right: 3vw;
+        font-size: 9rem;
+        line-height: 11rem;
+    }
 
 
-/* iPad Pro, desktop */
-@media (min-width: 1365px) and (orientation: landscape) {
+    header p {
+        top: 61vh;
+        padding-left: 40vw;
+        padding-right: 5vw;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    header .barberpole img {
+        width: 90px;
+        height: 90px;
+        top: 13px;
+        left: 8px;
+    }
 
     .navigation {
         display: block;
@@ -388,70 +418,46 @@ header img {
     .navigation ul li {
         float: left;
     }
+    
+/*     .navigation ul li .about {
+        width: 18vw;
+        background-color: yellow;
+    } */
 
     .navigation ul li a {
-        font-size: 4rem;
+        font-size: 3rem;
         color: white;
-        padding: 0 2vw;
+        margin: 0 2vw;
         text-decoration: none;
-        line-height: 6vw;
+        line-height: 5vw;
         text-transform: uppercase;
     }
 
-    header h1 {
-        top: 20vh;
-        padding-left: 40vw;
-        padding-right: 5vw;
-        font-size: 11rem;
-        line-height: 13rem;
+    .navigation ul li a:hover {
+        text-shadow: 1px 0 0 currentColor;
+        cursor: pointer;
     }
-
-    header p {
-        top: 58vh;
-        padding-left: 40vw;
-        padding-right: 5vw;
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-
-
-    header img {
-        width: 120px;
-        height: 120px;
-        top: 13px;
-        left: 8px;
+    
+    .images {
+        display: block;
     }
 }
+
+
+
 
 /* iPad Pro, desktop */
 @media (min-width: 1365px) and (orientation: landscape) {
 
-    .navigation {
-        display: block;
-        left: 38vw;
-    }
-
-    .navigation ul {
-        list-style: none;
-    }
-
-    .navigation ul li {
-        float: left;
-    }
-
     .navigation ul li a {
         font-size: 4rem;
-        color: white;
-        padding: 0 2vw;
-        text-decoration: none;
         line-height: 6vw;
-        text-transform: uppercase;
     }
 
     header h1 {
         top: 20vh;
         padding-left: 40vw;
-        padding-right: 5vw;
+        padding-right: 8vw;
         font-size: 11rem;
         line-height: 13rem;
     }
@@ -465,13 +471,12 @@ header img {
     }
 
 
-    header img {
+    header .barberpole img {
         width: 120px;
         height: 120px;
-        top: 13px;
-        left: 8px;
     }
 }
+
 
 /* Main Information */
 
@@ -510,18 +515,20 @@ header img {
 
 .information i {
     font-size: 4rem;
-    padding: 6.5vh 0 0 24vw;
+    padding: 6.5vh 0 0 44vw;
     /*     float: left; */
 }
 
-i.fa-map-marker {
+/* i.fa-map-marker {
     padding-top: 8vh;
-}
+} */
+
+/*
 
 i.fa-mobile {
     padding-top: 11vh;
     padding-left: 26vw;
-}
+} */
 
 .information .phone {
     left: 27vw;
@@ -533,17 +540,19 @@ i.fa-mobile {
     text-transform: uppercase;
     display: inline;
     margin-left: 2vw;
-    vertical-align: 30%;
-
 }
 
-.contact h2 {
+.information .about h2 {
+    display: none;
+}
+
+/* .contact h2 {
     margin-left: 5vw;
-}
+} */
 
-.about h2 {
+/* .about h2 {
     margin-left: 6vw;
-}
+} */
 
 .information h3 {
     font-size: 2.5rem;
@@ -639,53 +648,52 @@ i.fa-mobile {
         line-height: 2.3rem;
     }
 
-    .information .phone {
+    /*     .information .phone {
         left: 30vw;
         top: 20vh;
     }
-
+    
     .information i {
         padding: 6.5vh 0 0 27vw;
     }
-
+    
     i.fa-mobile {
         padding-top: 11vh;
         padding-left: 29vw;
     }
-
+    
     i.fa-user-tie {
         padding-left: 32vw;
-    }
+    } */
 
 }
 
 /* Pixel 2 */
 @media (min-width: 410px) and (orientation: portrait) {
     .information .phone {
-        left: 32vw;
-        top: 23vh;
+        left: 29vw;
     }
 
     .information .about {
         height: 65vh;
     }
 
-    .information i {
+    /*     .information i {
         padding: 6.5vh 0 0 27vw;
     }
-
+    
     i.fa-mobile {
         padding-top: 12vh;
         padding-left: 30vw;
     }
-
+    
     i.fa-user-tie {
         padding-left: 32vw;
     }
-
+    
     i.fa-map-marker {
         padding-top: 10vh;
-    }
+    } */
 
     .information .location h3:nth-of-type(1) {
         left: 30vw;
@@ -720,10 +728,10 @@ i.fa-mobile {
         height: 55vh;
     }
 
-    .information .phone {
+    /*     .information .phone {
         left: 29vw;
         top: 19vh;
-    }
+    } */
 
     .information .img {
         height: 35vh;
@@ -742,25 +750,23 @@ i.fa-mobile {
 
     .information i {
         font-size: 7rem;
-        padding: 6.5vh 0 0 27vw;
-        /*     float: left; */
     }
 
 
-    .information h2 {
+    /*     .information h2 {
         font-size: 4rem;
         margin-left: 2vw;
         vertical-align: 20%;
-
+    
     }
-
+    
     .contact h2 {
         margin-left: 5vw;
     }
-
+    
     .about h2 {
         margin-left: 6vw;
-    }
+    } */
 
     .information h3 {
         font-size: 4.5rem;
@@ -774,28 +780,28 @@ i.fa-mobile {
         line-height: 3.6rem;
     }
 
-    .information .phone {
+    /*     .information .phone {
         left: 32vw;
         top: 20.5vh;
-    }
+    } */
 
     .information a {
         font-size: 4.5rem;
     }
 
 
-    i.fa-mobile {
+    /*     i.fa-mobile {
         padding-top: 10vh;
         padding-left: 30vw;
     }
-
+    
     i.fa-user-tie {
         padding-left: 32vw;
     }
-
+    
     i.fa-map-marker {
         padding-top: 6vh;
-    }
+    } */
 
     .information .location h3:nth-of-type(1) {
         left: 30vw;
@@ -818,30 +824,94 @@ i.fa-mobile {
         float: right;
         width: 50%;
         background-color: #2c8e64;
-        /*         box-sizing: border-box;
-        border: solid 10px #2c8e64;
-        border-left: solid 0px #2c8e64; */
     }
 
     .information .contact {
         float: left;
         width: 50%;
-        /*         box-sizing: border-box;
-        border: solid 10px #2c8e64;
-        border: solid 10px #2c8e64;
-        border-right: solid 0px #2c8e64; */
     }
 
     .information .img {
         float: left;
         width: 50%;
-        /*         box-sizing: border-box;
-        border: solid 10px #2c8e64; */
     }
 
     .info.about {
         background-color: #2c8e64;
     }
+
+    .information .location {
+        height: 35vh;
+    }
+
+    .information .contact {
+        height: 35vh;
+    }
+
+    .information .img {
+        height: 35vh;
+    }
+
+    .info.about {
+        height: 60vh;
+    }
+
+    .info h2 {
+        display: none;
+    }
+
+    i.fa-map-marker {
+        font-size: 8rem;
+        padding: 14.5vh 0 0 7vw;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        left: 17vw;
+        top: 12.5vh;
+        font-size: 4rem;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        left: 17vw;
+        top: 18vh;
+        font-size: 4rem;
+    }
+
+    i.fa-mobile {
+        font-size: 8rem;
+        padding: 14.5vh 0 0 7vw;
+    }
+
+    .information .phone {
+        left: 18vw;
+        top: 16vh;
+    }
+
+    .information .phone a {
+        font-size: 4em;
+    }
+
+    i.fa-user-tie {
+        font-size: 8rem;
+        padding: 9.5vh 0 0 46vw;
+    }
+
+    .information p {
+        top: 20vh;
+        font-size: 4rem;
+        line-height: 4.9rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -875,27 +945,37 @@ i.fa-mobile {
         height: 100vh;
     }
 
+    .information h3 {
+        font-size: 2rem;
+    }
+
+    .information .phone a {
+        font-size: 2rem;
+    }
+
+
+
     .info h2 {
         display: none;
     }
 
     i.fa-map-marker {
-        font-size: 5rem;
+        font-size: 4.5rem;
         padding: 17vh 0 0 7vw;
     }
 
     .information .location h3:nth-of-type(1) {
         left: 18vw;
-        top: 12vh;
+        top: 17vh;
     }
 
     .information .location h3:nth-of-type(2) {
         left: 18vw;
-        top: 19vh;
+        top: 24vh;
     }
 
     i.fa-mobile {
-        font-size: 5rem;
+        font-size: 4.5rem;
         padding: 17vh 0 0 7vw;
     }
 
@@ -905,7 +985,7 @@ i.fa-mobile {
     }
 
     i.fa-user-tie {
-        font-size: 5rem;
+        font-size: 4.5rem;
         padding: 9.5vh 0 0 46vw;
     }
 
@@ -925,7 +1005,45 @@ i.fa-mobile {
         left: 18vw;
         top: 24vh;
     }
+
+    .information .phone {
+        top: 21vh;
+    }
+
+    .info.about {
+        height: 80vh;
+    }
+
 }
+
+
+/* iPhone 6/7/8 Plus */
+@media (min-width: 736px) and (orientation: landscape) {
+
+
+    i.fa-map-marker {
+        font-size: 5rem;
+        padding: 17.5vh 0 0 7vw;
+    }
+
+    i.fa-mobile {
+        font-size: 5rem;
+        padding: 18vh 0 0 7vw;
+    }
+
+    .information .phone {
+        top: 21.5vh;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        top: 16.5vh;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        top: 24.5vh;
+    }
+}
+
 
 /* iPad */
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -951,24 +1069,24 @@ i.fa-mobile {
     }
 
     i.fa-map-marker {
-        font-size: 8rem;
+        font-size: 6rem;
         padding: 17vh 0 0 7vw;
     }
 
     .information .location h3:nth-of-type(1) {
         left: 17vw;
         top: 15vh;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .information .location h3:nth-of-type(2) {
         left: 17vw;
         top: 22vh;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     i.fa-mobile {
-        font-size: 8rem;
+        font-size: 6rem;
         padding: 17vh 0 0 7vw;
     }
 
@@ -978,11 +1096,11 @@ i.fa-mobile {
     }
 
     .information .phone a {
-        font-size: 4rem;
+        font-size: 3em;
     }
 
     i.fa-user-tie {
-        font-size: 8rem;
+        font-size: 6rem;
         padding: 9.5vh 0 0 46vw;
     }
 
@@ -991,62 +1109,88 @@ i.fa-mobile {
         font-size: 3rem;
         line-height: 3.8rem;
     }
+}
 
 
-    /* iPad Pro i Desktop */
-    @media (min-width: 1024px) and (orientation: landscape) {
+/* iPad Pro i Desktop */
+@media (min-width: 1366px) and (orientation: landscape) {
 
-        .greenimg {
-            background-image: url(images/Images_ready/IMG_7135__zd.jpg);
-            background-size: cover;
-        }
-
-        .information .about {
-/*             background-color: transparent; */
-                background-color: rgba(0, 0, 0, 40%);
-            height: 90vh;
-        }
-
-        .information p {
-            color: white;
-            top: 34vh;
-            font-size: 3.5rem;
-            line-height: 4.4rem;
-            padding-left: 10vw;
-            padding-right: 50vw;
-        }
-
-        i.fa-user-tie {
-            display: none;
-        }
-
-        .information .about h2 {
-            display: block;
-            color: white;
-            font-size: 8rem;
-            vertical-align: 0%;
-            padding: 15vh 0 0 10vw;
-            margin: 0;
-            font-family: 'Bree Serif', serif;
-            font-weight: 400;
-        }
+    .greenimg {
+        background-image: url(images/Images_ready/IMG_7135__zd.jpg);
+        background-size: cover;
     }
 
+    .information .about {
+        /*             background-color: transparent; */
+        background-color: rgba(0, 0, 0, 40%);
+        height: 90vh;
+    }
+
+    .information p {
+        color: white;
+        top: 34vh;
+        font-size: 3.5rem;
+        line-height: 4.4rem;
+        padding-left: 10vw;
+        padding-right: 50vw;
+    }
+
+    i.fa-user-tie {
+        display: none;
+    }
+
+    i.fa-map-marker,
+    i.fa-mobile {
+        font-size: 8rem;
+    }
+
+    .information .location h3 {
+        font-size: 4rem;
+    }
+
+    .information .location h3:nth-of-type(1) {
+        font-size: 4rem;
+    }
+
+    .information .location h3:nth-of-type(2) {
+        font-size: 4rem;
+    }
+
+    .information .phone a {
+        font-size: 4em;
+    }
+
+    .information .about h2 {
+        display: block;
+        color: white;
+        font-size: 8rem;
+        vertical-align: 0%;
+        padding: 15vh 0 0 10vw;
+        margin: 0;
+        font-family: 'Bree Serif', serif;
+        font-weight: 400;
+    }
+}
+
+/* Footer */
+
+
+
+footer {
+    background-color: #2c8e64;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5vh 0;
+}
+
+@media (min-width: 567px) and (max-width: 1365px) and (orientation: landscape) {
     footer {
-        background-color: #2c8e64;
-        /* rgba(25, 172, 108, 0.7); */
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 10px 0;
+        background-color: rgba(25, 172, 108, 0.7);
     }
+}
 
-    @media (min-width: 568px) and (orientation: landscape) {
-        footer {
-            background-color: rgba(25, 172, 108, 0.7);
-        }
-
-        @media (min-width: 1024px) {
-            footer {
-                background-color: rgba(25, 172, 108, 0.7);
-            }
-        }
+@media (min-width: 1024px) and (orientation: portrait) {
+    footer {
+        background-color: rgba(25, 172, 108, 0.7);
+    }
+}
