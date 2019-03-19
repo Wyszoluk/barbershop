@@ -28,11 +28,16 @@ header {
 }
 
 header .bcgimg {
-    background-image: url(images/images_ready/bgc.png);
+    background-image: url("images/bgc.png");
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: -90px 0;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: static;
+    z-index: -1;
 }
 
 header .bcg {
@@ -418,8 +423,8 @@ header .barberpole img {
     .navigation ul li {
         float: left;
     }
-    
-/*     .navigation ul li .about {
+
+    /*     .navigation ul li .about {
         width: 18vw;
         background-color: yellow;
     } */
@@ -435,10 +440,10 @@ header .barberpole img {
     }
 
     .navigation ul li a:hover {
-        text-shadow: 1px 0 0 currentColor, -1px 0 0 currentColor;
+        text-shadow: .7px 0 0 currentColor, -.7px 0 0 currentColor;
         cursor: pointer;
     }
-    
+
     .images {
         display: block;
     }
@@ -475,6 +480,22 @@ header .barberpole img {
     header .barberpole img {
         width: 120px;
         height: 120px;
+    }
+}
+
+/* Desktop short */
+@media (min-width: 1365px) and (orientation: landscape) and (max-height: 680px) {
+
+
+    header h1 {
+        top: 16vh;
+        padding-left: 19vw;
+        padding-right: 25vw;
+    }
+
+    header p {
+        top: 63vh;
+        padding-left: 19vw;
     }
 }
 
@@ -582,7 +603,7 @@ i.fa-mobile {
     text-decoration: none;
     cursor: default;
     color: black;
-    pointer-events: none;
+    pointer-events: auto;
     display: block;
     font-size: 2.5rem;
     font-weight: bold;
@@ -596,15 +617,15 @@ i.fa-mobile {
 }
 
 .information .window {
-    background-image: url(images/images_ready/IMG_7905.jpg);
+    background-image: url("images/IMG_7905.jpg");
 }
 
 .information .cutting {
-    background-image: url(images/images_ready/IMG_7150.jpg);
+    background-image: url("images/IMG_7150.jpg");
 }
 
 .information .cosmetics {
-    background-image: url(images/images_ready/fb_tlo_IMG_7162.png);
+    background-image: url("images/fb_tlo_IMG_7162.png");
     /*     display: none; */
     /* display only on mobile */
 }
@@ -952,6 +973,7 @@ i.fa-mobile {
 
     .information .phone a {
         font-size: 2rem;
+        pointer-events: none;
     }
 
 
@@ -1117,7 +1139,7 @@ i.fa-mobile {
 @media (min-width: 1366px) and (orientation: landscape) {
 
     .greenimg {
-        background-image: url(images/Images_ready/IMG_7135__zd.jpg);
+        background-image: url("images/IMG_7135__zd.jpg");
         background-size: cover;
     }
 
